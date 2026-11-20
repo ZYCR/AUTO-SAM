@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sam3label"
+version = "0.1.0"
+description = "SAM3 驱动的半自动分割标注系统（批量推理 + 复核界面 + 多格式导出）"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.7",
+    "torchvision",
+    "sam3>=0.1.4",
+    "numpy>=1.26,<2.4",
+    "pillow",
+    "opencv-python-headless",
+    "pycocotools",
+    "fastapi",
+    "uvicorn[standard]",
+    "pyyaml",
+]
+
+[project.scripts]
+sam3label = "sam3label.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["sam3label*"]

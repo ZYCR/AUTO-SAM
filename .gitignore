@@ -1,0 +1,28 @@
+# ---- 环境与依赖 ----
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# ---- 模型权重与词表（体积大，走下载脚本）----
+weights/
+assets/
+*.pt
+*.pth
+*.safetensors
+
+# ---- 运行产物 ----
+logs/
+*.log
+data/projects/*/videos/
+data/projects/*/exports/
+data/projects/*/.cache/
+.pytest_cache/
+.DS_Store
+
+# ---- 只保留仓库内的示例项目 ----
+data/projects/*
+!data/projects/samples/

@@ -1,0 +1,24 @@
+{
+  "name": "samples",
+  "classes": [
+    "car",
+    "person",
+    "building",
+    "tree",
+    "cup",
+    "bag",
+    "phone",
+    "tablet",
+    "leaf",
+    "mountain"
+  ],
+  "image_dir": "",
+  "created": "2026-11-20 10:44:25",
+  "settings": {
+    "confidence": 0.5,
+    "min_area": 100,
+    "dedup_iou": 0.75,
+    "resolution": 1008
+  },
+  "note": "只含 6 张示例图及标注；启动不会扫描/标注其它图片"
+}
